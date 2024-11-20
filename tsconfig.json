@@ -1,0 +1,12 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },   // Reference application-specific config
+    { "path": "./tsconfig.node.json" }  // Reference Node.js-specific config
+  ],
+  "compilerOptions": {
+    "composite": true,                  // Enable project references
+    "skipLibCheck": true,               // Skip type-checking .d.ts files for faster builds
+    "strict": true                      // Enable strict type-checking across projects
+  }
+}

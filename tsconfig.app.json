@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "ES2020",                                // Target modern JavaScript
+    "useDefineForClassFields": true,                  // Use ES2020 class fields
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],         // Include ES2020 and DOM types
+    "module": "ESNext",                               // Use ESNext module system
+    "moduleResolution": "bundler",                   // Ensure bundler-friendly resolution
+    "allowImportingTsExtensions": true,              // Allow .ts extension imports
+    "isolatedModules": true,                         // Ensure isolated module transpilation
+    "moduleDetection": "force",                      // Detect module usage strictly
+    "noEmit": true,                                  // Prevent emitting compiled files
+    "jsx": "react-jsx",                              // Use React's JSX runtime
+
+    /* Type Checking Options */
+    "strict": true,                                  // Enable strict mode
+    "noUnusedLocals": true,                          // Disallow unused local variables
+    "noUnusedParameters": true,                      // Disallow unused parameters
+    "noFallthroughCasesInSwitch": true,              // Disallow fallthrough cases in switch
+
+    /* Additional Options */
+    "skipLibCheck": true                             // Skip checking declaration files for speed
+  },
+  "include": ["src"],                                 // Include all files in the src directory
+  "exclude": ["node_modules", "**/*.test.ts", "**/*.test.tsx"] // Exclude tests and node_modules
+}
